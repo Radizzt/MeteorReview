@@ -12,7 +12,7 @@ Template.postEdit.events({
         var sameLink = Posts.find({url: postProperties.url});
         console.log("Same link: " + sameLink.count());
         if (sameLink.count() > 0){
-            alert("Duplicated Links");
+            throwError("Duplicated link!");
             var sameLinkPage = Posts.findOne({url: postProperties.url});
             Router.go('postPage', {_id: sameLinkPage._id});
         }
@@ -20,7 +20,7 @@ Template.postEdit.events({
         Posts.update(currentPostId, {$set: postProperties}, function(error) {
             if (error) {
                 // display the error to the user
-                alert(error.reason);
+                throwError(error.reason);
             } else {
                 Router.go('postPage', {_id: currentPostId});
             }
