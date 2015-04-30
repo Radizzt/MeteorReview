@@ -9,6 +9,14 @@ Template.postEdit.events({
             title: $(e.target).find('[name=title]').val()
         }
 
+        var sameLink = Posts.find({url: postProperties.url});
+        console.log("Same link: " + sameLink.count());
+        if (sameLink.count() > 0){
+            alert("Duplicated Links");
+            var sameLinkPage = Posts.findOne({url: postProperties.url});
+            Router.go('postPage', {_id: sameLinkPage._id});
+        }
+        else{
         Posts.update(currentPostId, {$set: postProperties}, function(error) {
             if (error) {
                 // display the error to the user
@@ -17,6 +25,7 @@ Template.postEdit.events({
                 Router.go('postPage', {_id: currentPostId});
             }
         });
+        }
     },
 
     'click .delete': function(e) {
