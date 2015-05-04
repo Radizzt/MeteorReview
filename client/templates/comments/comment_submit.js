@@ -24,6 +24,7 @@ Template.commentSubmit.events({
         var errors = {};
         if (! comment.body) {
             errors.body = "Please write some content";
+            throwError("Comment Section empty!");
             return Session.set('commentSubmitErrors', errors);
         }
 
