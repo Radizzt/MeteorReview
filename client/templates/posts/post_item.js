@@ -8,8 +8,9 @@ Template.postItem.helpers({
     domain: function() {
         var a = document.createElement('a');
         a.href = this.url;
-        console.log(this.url);
-        console.log(this.title);
         return a.hostname;
+    },
+    commentsCount: function() {
+        return Comments.find({postId: this._id}).count();
     }
 });
