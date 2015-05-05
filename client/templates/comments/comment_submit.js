@@ -1,5 +1,5 @@
 Template.postEdit.onCreated(function() {
-    Session.set('postEditErrors', {});
+    Session.set('commentSubmitErrors', {});
 });
 
 Template.commentSubmit.helpers({

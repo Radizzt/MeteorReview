@@ -7,6 +7,13 @@ Template.notifications.helpers({
     }
 });
 
+Template.notifications.events({
+    'click a.ddt': function(){
+    console.log("Notification Click!");
+    }
+})
+
+
 Template.notificationItem.helpers({
     notificationPostPath: function() {
         return Router.routes.postPage.path({_id: this.postId});
@@ -15,6 +22,7 @@ Template.notificationItem.helpers({
 
 Template.notificationItem.events({
     'click a': function() {
+        console.log("Notification Click!");
         Notifications.update(this._id, {$set: {read: true}});
     }
 });
