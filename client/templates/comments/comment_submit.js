@@ -1,4 +1,4 @@
-Template.postEdit.onCreated(function() {
+Template.commentSubmit.onCreated(function() {
     Session.set('commentSubmitErrors', {});
 });
 
