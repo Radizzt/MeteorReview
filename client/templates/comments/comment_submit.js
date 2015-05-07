@@ -8,6 +8,9 @@ Template.commentSubmit.helpers({
     },
     errorClass: function (field) {
         return !!Session.get('commentSubmitErrors')[field] ? 'has-error' : '';
+    },
+    phone: function(){
+        return Meteor.isCordova? true : false;
     }
 });
 
@@ -35,5 +38,21 @@ Template.commentSubmit.events({
                 $body.val('');
             }
         });
+    },
+
+    'click .photoSubmit': function(e){
+        //alert("button click!");
+        if (Meteor.isCordova){
+            alert("Phone!");
+            window.imagePicker.getPictures(
+                function(results) {
+                    for (var i = 0; i < results.length; i++) {
+                        console.log('Image URI: ' + results[i]);
+                    }
+                }, function (error) {
+                    console.log('Error: ' + error);
+                }
+            );
+        }
     }
 });
