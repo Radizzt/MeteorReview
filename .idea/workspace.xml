@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e958daa-a7ba-4bac-9562-681326709731" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/posts/posts_list.html" afterPath="$PROJECT_DIR$/client/templates/posts/posts_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/posts/posts_list.js" afterPath="$PROJECT_DIR$/client/templates/posts/posts_list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -49,20 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1170">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.65217394" vertical-offset="435" max-vertical-offset="1260">
+              <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="posts_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/posts/posts_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23519164" vertical-offset="0" max-vertical-offset="574">
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="300">
               <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding />
             </state>
@@ -84,8 +83,8 @@
       <file leaf-file-name="publications.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/publications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -161,10 +160,10 @@
         <option value="$PROJECT_DIR$/client/templates/comments/comment_submit.html" />
         <option value="$PROJECT_DIR$/client/templates/comments/comment_submit.js" />
         <option value="$PROJECT_DIR$/server/fixtures.js" />
-        <option value="$PROJECT_DIR$/server/publications.js" />
-        <option value="$PROJECT_DIR$/lib/router.js" />
         <option value="$PROJECT_DIR$/client/templates/posts/posts_list.js" />
         <option value="$PROJECT_DIR$/client/templates/posts/posts_list.html" />
+        <option value="$PROJECT_DIR$/server/publications.js" />
+        <option value="$PROJECT_DIR$/lib/router.js" />
       </list>
     </option>
   </component>
@@ -847,26 +846,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1110">
           <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1170">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -883,8 +866,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/posts/posts_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23519164" vertical-offset="0" max-vertical-offset="574">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="300">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65217394" vertical-offset="435" max-vertical-offset="1260">
+          <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
           <folding />
         </state>
       </provider>
